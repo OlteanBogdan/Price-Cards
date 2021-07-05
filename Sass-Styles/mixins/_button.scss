@@ -1,0 +1,26 @@
+.card_button {
+    width: 100%;
+    margin-top: 20px;
+    background-color: hsl(237, 63%, 64%);
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}
+
+.highlight_card {
+    .card_button {
+        background-color: hsl(240, 78%, 98%);
+        margin-top: 50px;
+        color: hsl(237, 63%, 64%);
+        transition: 0.1s all;
+
+        &:hover {
+            background-color: darken($color: hsl(237, 63%, 64%), $amount: 25%);
+            color: hsl(240, 78%, 98%);
+        }
+    }
+}
