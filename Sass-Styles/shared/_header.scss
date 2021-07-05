@@ -1,0 +1,48 @@
+.header_wrapper {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        
+    .header_title {
+        color: hsl(233, 13%, 49%);
+    }
+
+    .header_button_wrapper {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        p {
+            color: hsl(234, 14%, 74%);
+        }
+
+        .header_main--button {
+            position: relative;
+            margin: 0 20px;
+            padding: 18px 35px;
+            border-radius: 35px;
+            border: none;
+            background-color: hsl(236, 72%, 79%);
+            cursor: pointer;
+
+            &::after {
+                content: "";
+                top: 3px;
+                left: 3px;
+                position: absolute;
+                border: 15px solid hsl(240, 78%, 98%);
+                border-radius: 50px;
+                transition: .6s all;
+
+            }
+
+            &.active {
+                &::after {
+                    transform: translateX(110%);
+                }                
+            }
+        }
+    }
+}
