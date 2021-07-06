@@ -5,8 +5,14 @@ body {
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    background-color: hsl(240, 78%, 98%);
-}
+    background: rgb(233,222,251);
+    background: linear-gradient(149deg, rgba(233,222,251,1) 0%, rgba(113,80,213,1) 100%); 
+    height: 100vh;
+
+    @media only screen and (max-width: 1200px) {
+        height: auto;
+    }
+    }
 
 ul {
     padding: 0;

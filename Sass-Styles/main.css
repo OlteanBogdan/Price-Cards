@@ -17,6 +17,7 @@
 }
 
 .header_wrapper .header_title {
+  font-size: 35px;
   color: #6d708d;
 }
 
@@ -31,7 +32,7 @@
 }
 
 .header_wrapper .header_button_wrapper p {
-  color: #b3b5c6;
+  color: #5c26fe;
 }
 
 .header_wrapper .header_button_wrapper .header_main--button {
@@ -40,7 +41,7 @@
   padding: 18px 35px;
   border-radius: 35px;
   border: none;
-  background-color: #a3a8f0;
+  background-color: #5c26fe;
   cursor: pointer;
 }
 
@@ -68,7 +69,15 @@ body {
   font-size: 15px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  background-color: #f6f6fe;
+  background: #e9defb;
+  background: linear-gradient(149deg, #e9defb 0%, #7150d5 100%);
+  height: 100vh;
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    height: auto;
+  }
 }
 
 ul {
@@ -104,6 +113,12 @@ p {
   cursor: pointer;
   font-size: 16px;
   color: white;
+  -webkit-transition: 0.1s all;
+  transition: 0.1s all;
+}
+
+.card_button:hover {
+  background-color: #4047d4;
 }
 
 .highlight_card .card_button {
@@ -132,6 +147,15 @@ p {
           align-items: center;
 }
 
+@media only screen and (max-width: 1200px) {
+  .main_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .main_container .card-basic {
   text-align: center;
   color: #494c5f;
@@ -141,10 +165,26 @@ p {
   max-width: 350px;
   background-color: #696fdd;
   color: #f6f6fe;
-  padding: 40px;
+  padding: 60px;
   border-radius: 10px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main_container .card-basic {
+    padding: 30px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin: 30px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .main_container .card-basic {
+    width: auto;
+    padding: 0;
+  }
 }
 
 .main_container .card-basic .card_title {
@@ -178,6 +218,12 @@ p {
 .main_container .off_set-card {
   color: #494c5f;
   background-color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main_container .off_set-card {
+    padding: 80px 30px;
+  }
 }
 
 .main_container .off_set-card .promo_card--list {
