@@ -4,6 +4,10 @@
     justify-content: center;
     align-items: center;
 
+    @media only screen and (max-width: 1200px) {
+        flex-direction: column;
+    }
+
     .card-basic {
         text-align: center;
         color: hsl(232, 13%, 33%);
@@ -13,9 +17,20 @@
         max-width: 350px;
         background-color: hsl(237, 63%, 64%) ;
         color: hsl(240, 78%, 98%);
-        padding: 40px;
+        padding: 60px;
         border-radius: 10px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+        @media only screen and (max-width: 1200px) {
+            padding: 30px;
+            box-shadow: none;
+            margin: 30px;
+        }
+
+        @media only screen and (max-width: 450px) {
+            width: auto;
+            padding: 0;
+        }
 
         .card_title{
             font-size: 20px;
@@ -48,7 +63,8 @@
         color: hsl(232, 13%, 33%);
         background-color: white;
 
-        &:last-child {
+         @media only screen and (max-width: 1200px) {
+            padding: 80px 30px;
         }
 
          .promo_card--list {
@@ -60,13 +76,11 @@
                 border-bottom: hsl(232, 13%, 33%) 1px solid;
             }
         }
-        
     }
 
     .highlight_card {
         padding: 80px 30px;
         z-index: 7;
         margin: 0 -30px;
-
     }
 }

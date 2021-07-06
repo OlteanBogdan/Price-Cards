@@ -9,6 +9,11 @@
     cursor: pointer;
     font-size: 16px;
     color: white;
+    transition: 0.1s all;
+
+    &:hover {
+        background-color: darken($color: hsl(237, 63%, 64%), $amount: 10%);
+    }
 }
 
 .highlight_card {
